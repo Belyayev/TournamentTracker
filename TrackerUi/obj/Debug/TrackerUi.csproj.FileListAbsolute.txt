@@ -9,3 +9,6 @@ C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.cspr
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.exe
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.pdb
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.CreateTournamentForm.resources
+C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.CreatePrizeForm.resources
+C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.CreateTeamForm.resources
+C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.TournamentnDashboardForm.resources
