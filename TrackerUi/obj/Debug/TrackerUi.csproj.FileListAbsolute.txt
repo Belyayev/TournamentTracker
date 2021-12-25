@@ -8,3 +8,4 @@ C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.cspr
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.csproj.CoreCompileInputs.cache
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.exe
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.pdb
+C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\TrackerUi.CreateTournamentForm.resources
