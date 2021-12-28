@@ -2,7 +2,6 @@ C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\bin\Debug\net5.0\Tr
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\bin\Debug\net5.0\TrackerLibrary.dll
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\bin\Debug\net5.0\ref\TrackerLibrary.dll
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\bin\Debug\net5.0\TrackerLibrary.pdb
-C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\net5.0\TrackerLibrary.csproj.AssemblyReference.cache
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\net5.0\TrackerLibrary.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\net5.0\TrackerLibrary.AssemblyInfoInputs.cache
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\net5.0\TrackerLibrary.AssemblyInfo.cs
@@ -10,3 +9,4 @@ C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\net5.0\Tr
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\net5.0\TrackerLibrary.dll
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\net5.0\ref\TrackerLibrary.dll
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\net5.0\TrackerLibrary.pdb
+C:\Users\4xgoo\source\repos\TournamentTracker\TrackerLibrary\obj\Debug\net5.0\TrackerLibrary.csproj.AssemblyReference.cache
