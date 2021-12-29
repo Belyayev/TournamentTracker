@@ -17,6 +17,8 @@ namespace TrackerUI
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            TrackerLibrary.GlobalConfig.InitializeConnections(true, true);
             Application.Run(new Form1());
         }
     }

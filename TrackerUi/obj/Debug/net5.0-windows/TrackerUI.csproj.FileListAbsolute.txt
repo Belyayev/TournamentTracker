@@ -14,3 +14,6 @@ C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\net5.0-windows
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\net5.0-windows\ref\TrackerUI.dll
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\net5.0-windows\TrackerUI.pdb
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\net5.0-windows\TrackerUI.genruntimeconfig.cache
+C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\bin\Debug\net5.0-windows\TrackerLibrary.dll
+C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\bin\Debug\net5.0-windows\TrackerLibrary.pdb
+C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\net5.0-windows\TrackerUI.csproj.CopyComplete
