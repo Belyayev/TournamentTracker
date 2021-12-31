@@ -22,7 +22,7 @@ namespace TrackerUI
             {
                 PrizeModel model = new PrizeModel(
                     placeNumberValue.Text,
-                    placeNumberValue.Text,
+                    placeNameValue.Text,
                     prizeAmountValue.Text,
                     prizePercentageValue.Text);
 
@@ -30,6 +30,10 @@ namespace TrackerUI
                 {
                     db.CreatePrize(model);
                 }
+                placeNumberValue.Text = "";
+                placeNameValue.Text = "";
+                prizeAmountValue.Text = "0";
+                prizePercentageValue.Text = "0";
 
             }
             else
