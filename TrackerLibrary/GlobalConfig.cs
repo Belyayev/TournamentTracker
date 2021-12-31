@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using TrackerLibrary.DataAccess;
 
 namespace TrackerLibrary
 {
@@ -18,7 +19,7 @@ namespace TrackerLibrary
             if(textFiles)
             {
                 // TODO - crate text files
-                TextConnection text = new TextConnection();
+                TextConnector text = new TextConnector();
                 Connections.Add(text);
             }
         }
