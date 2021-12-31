@@ -30,14 +30,14 @@ namespace TrackerUI
         private void InitializeComponent()
         {
             this.createPrizeLabel = new System.Windows.Forms.Label();
-            this.prizeAmountText = new System.Windows.Forms.TextBox();
+            this.prizeAmountValue = new System.Windows.Forms.TextBox();
             this.prizeAmountLabel = new System.Windows.Forms.Label();
-            this.placeNameText = new System.Windows.Forms.TextBox();
+            this.placeNameValue = new System.Windows.Forms.TextBox();
             this.placeNameLabel = new System.Windows.Forms.Label();
-            this.placeNumberText = new System.Windows.Forms.TextBox();
+            this.placeNumberValue = new System.Windows.Forms.TextBox();
             this.placeNumberLabel = new System.Windows.Forms.Label();
             this.createPrizeButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.prizePercentageValue = new System.Windows.Forms.TextBox();
             this.prizePercentageLabel = new System.Windows.Forms.Label();
             this.orLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -50,17 +50,17 @@ namespace TrackerUI
             this.createPrizeLabel.Location = new System.Drawing.Point(29, 25);
             this.createPrizeLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.createPrizeLabel.Name = "createPrizeLabel";
-            this.createPrizeLabel.Size = new System.Drawing.Size(372, 88);
+            this.createPrizeLabel.Size = new System.Drawing.Size(313, 74);
             this.createPrizeLabel.TabIndex = 39;
             this.createPrizeLabel.Text = "Create Prize";
             // 
-            // prizeAmountText
+            // prizeAmountValue
             // 
-            this.prizeAmountText.Location = new System.Drawing.Point(299, 344);
-            this.prizeAmountText.Margin = new System.Windows.Forms.Padding(5);
-            this.prizeAmountText.Name = "prizeAmountText";
-            this.prizeAmountText.Size = new System.Drawing.Size(324, 57);
-            this.prizeAmountText.TabIndex = 45;
+            this.prizeAmountValue.Location = new System.Drawing.Point(299, 344);
+            this.prizeAmountValue.Margin = new System.Windows.Forms.Padding(5);
+            this.prizeAmountValue.Name = "prizeAmountValue";
+            this.prizeAmountValue.Size = new System.Drawing.Size(324, 50);
+            this.prizeAmountValue.TabIndex = 45;
             // 
             // prizeAmountLabel
             // 
@@ -70,17 +70,17 @@ namespace TrackerUI
             this.prizeAmountLabel.Location = new System.Drawing.Point(43, 344);
             this.prizeAmountLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.prizeAmountLabel.Name = "prizeAmountLabel";
-            this.prizeAmountLabel.Size = new System.Drawing.Size(244, 50);
+            this.prizeAmountLabel.Size = new System.Drawing.Size(212, 45);
             this.prizeAmountLabel.TabIndex = 46;
             this.prizeAmountLabel.Text = "Prize Amount";
             // 
-            // placeNameText
+            // placeNameValue
             // 
-            this.placeNameText.Location = new System.Drawing.Point(297, 267);
-            this.placeNameText.Margin = new System.Windows.Forms.Padding(5);
-            this.placeNameText.Name = "placeNameText";
-            this.placeNameText.Size = new System.Drawing.Size(324, 57);
-            this.placeNameText.TabIndex = 43;
+            this.placeNameValue.Location = new System.Drawing.Point(297, 267);
+            this.placeNameValue.Margin = new System.Windows.Forms.Padding(5);
+            this.placeNameValue.Name = "placeNameValue";
+            this.placeNameValue.Size = new System.Drawing.Size(324, 50);
+            this.placeNameValue.TabIndex = 43;
             // 
             // placeNameLabel
             // 
@@ -90,17 +90,17 @@ namespace TrackerUI
             this.placeNameLabel.Location = new System.Drawing.Point(41, 267);
             this.placeNameLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.placeNameLabel.Name = "placeNameLabel";
-            this.placeNameLabel.Size = new System.Drawing.Size(215, 50);
+            this.placeNameLabel.Size = new System.Drawing.Size(188, 45);
             this.placeNameLabel.TabIndex = 44;
             this.placeNameLabel.Text = "Place Name";
             // 
-            // placeNumberText
+            // placeNumberValue
             // 
-            this.placeNumberText.Location = new System.Drawing.Point(299, 192);
-            this.placeNumberText.Margin = new System.Windows.Forms.Padding(5);
-            this.placeNumberText.Name = "placeNumberText";
-            this.placeNumberText.Size = new System.Drawing.Size(324, 57);
-            this.placeNumberText.TabIndex = 41;
+            this.placeNumberValue.Location = new System.Drawing.Point(299, 192);
+            this.placeNumberValue.Margin = new System.Windows.Forms.Padding(5);
+            this.placeNumberValue.Name = "placeNumberValue";
+            this.placeNumberValue.Size = new System.Drawing.Size(324, 50);
+            this.placeNumberValue.TabIndex = 41;
             // 
             // placeNumberLabel
             // 
@@ -110,7 +110,7 @@ namespace TrackerUI
             this.placeNumberLabel.Location = new System.Drawing.Point(43, 192);
             this.placeNumberLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.placeNumberLabel.Name = "placeNumberLabel";
-            this.placeNumberLabel.Size = new System.Drawing.Size(252, 50);
+            this.placeNumberLabel.Size = new System.Drawing.Size(220, 45);
             this.placeNumberLabel.TabIndex = 42;
             this.placeNumberLabel.Text = "Place Number";
             // 
@@ -126,14 +126,15 @@ namespace TrackerUI
             this.createPrizeButton.TabIndex = 40;
             this.createPrizeButton.Text = "Create Prize";
             this.createPrizeButton.UseVisualStyleBackColor = true;
+            this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
             // 
-            // textBox1
+            // prizePercentageValue
             // 
-            this.textBox1.Location = new System.Drawing.Point(346, 541);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(277, 57);
-            this.textBox1.TabIndex = 47;
+            this.prizePercentageValue.Location = new System.Drawing.Point(346, 541);
+            this.prizePercentageValue.Margin = new System.Windows.Forms.Padding(5);
+            this.prizePercentageValue.Name = "prizePercentageValue";
+            this.prizePercentageValue.Size = new System.Drawing.Size(277, 50);
+            this.prizePercentageValue.TabIndex = 47;
             // 
             // prizePercentageLabel
             // 
@@ -143,7 +144,7 @@ namespace TrackerUI
             this.prizePercentageLabel.Location = new System.Drawing.Point(43, 541);
             this.prizePercentageLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.prizePercentageLabel.Name = "prizePercentageLabel";
-            this.prizePercentageLabel.Size = new System.Drawing.Size(293, 50);
+            this.prizePercentageLabel.Size = new System.Drawing.Size(255, 45);
             this.prizePercentageLabel.TabIndex = 48;
             this.prizePercentageLabel.Text = "Prize Percentage";
             // 
@@ -155,29 +156,29 @@ namespace TrackerUI
             this.orLabel.Location = new System.Drawing.Point(272, 449);
             this.orLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.orLabel.Name = "orLabel";
-            this.orLabel.Size = new System.Drawing.Size(87, 50);
+            this.orLabel.Size = new System.Drawing.Size(76, 45);
             this.orLabel.TabIndex = 49;
             this.orLabel.Text = "-or-";
             // 
             // CreatePrizeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 50F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(700, 839);
             this.Controls.Add(this.orLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.prizePercentageValue);
             this.Controls.Add(this.prizePercentageLabel);
             this.Controls.Add(this.createPrizeLabel);
-            this.Controls.Add(this.prizeAmountText);
+            this.Controls.Add(this.prizeAmountValue);
             this.Controls.Add(this.prizeAmountLabel);
-            this.Controls.Add(this.placeNameText);
+            this.Controls.Add(this.placeNameValue);
             this.Controls.Add(this.placeNameLabel);
-            this.Controls.Add(this.placeNumberText);
+            this.Controls.Add(this.placeNumberValue);
             this.Controls.Add(this.placeNumberLabel);
             this.Controls.Add(this.createPrizeButton);
             this.Font = new System.Drawing.Font("Segoe UI", 15.85714F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "CreatePrizeForm";
             this.Text = "Create Prize";
             this.Load += new System.EventHandler(this.CreatePrizeForm_Load);
@@ -189,14 +190,14 @@ namespace TrackerUI
         #endregion
 
         private System.Windows.Forms.Label createPrizeLabel;
-        private System.Windows.Forms.TextBox prizeAmountText;
+        private System.Windows.Forms.TextBox prizeAmountValue;
         private System.Windows.Forms.Label prizeAmountLabel;
-        private System.Windows.Forms.TextBox placeNameText;
+        private System.Windows.Forms.TextBox placeNameValue;
         private System.Windows.Forms.Label placeNameLabel;
-        private System.Windows.Forms.TextBox placeNumberText;
+        private System.Windows.Forms.TextBox placeNumberValue;
         private System.Windows.Forms.Label placeNumberLabel;
         private System.Windows.Forms.Button createPrizeButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox prizePercentageValue;
         private System.Windows.Forms.Label prizePercentageLabel;
         private System.Windows.Forms.Label orLabel;
     }
