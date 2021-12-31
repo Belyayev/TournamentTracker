@@ -32,6 +32,10 @@ namespace TrackerUI
                 }
 
             }
+            else
+            {
+                MessageBox.Show("This form has invalid input.");
+            }
         }
 
         private bool ValidateForm()
