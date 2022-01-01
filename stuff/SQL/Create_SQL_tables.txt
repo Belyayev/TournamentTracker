@@ -1,0 +1,8 @@
+CREATE TABLE Prizes
+( id int IDENTITY(1,1) PRIMARY KEY,
+  PlaceNumber int NOT NULL,
+  PlaceName nvarchar(50) NOt NULL,
+  PrizeAmount money NOT NULL,
+  PrizePercentage float NOT NULL,
+);
+

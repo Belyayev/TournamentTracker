@@ -6,7 +6,6 @@ namespace TrackerLibrary.DataAccess
 {
     public class SqlConnector : IDataConnection
     {
-        // TODO - make CreatePrize method to actually save to the database
         /// <summary>
         /// saves a new prize to the database
         /// </summary>
