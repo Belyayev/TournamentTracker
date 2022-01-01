@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8rHa/ICBst/L1jkcjWa/Sx6QAmHYgI9I7eulrNPzdMWf9m1E0fQ0buxyp+mQ65GSkeXTnYCETCLjWsRUx8A44g==",
+  "dgSpecHash": "ZX4yAle4jGa6YmT6MZqTt26Qq9T0n72KJQS8eTENI8R4mjTWw6Tvax5WisqBWtsVkOAUvlx+lK6t3psfeOG8yA==",
   "success": true,
   "projectFilePath": "C:\\Users\\4xgoo\\source\\repos\\TournamentTracker\\TrackerUi\\TrackerUI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\4xgoo\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
+  ],
   "logs": []
 }

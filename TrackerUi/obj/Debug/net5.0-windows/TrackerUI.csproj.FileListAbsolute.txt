@@ -23,3 +23,5 @@ C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\net5.0-windows
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\net5.0-windows\TrackerUI.csproj.GenerateResource.cache
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\net5.0-windows\TrackerUI.CreatePrizeForm.resources
 C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\obj\Debug\net5.0-windows\TrackerUI.TournamentDashboardForm.resources
+C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\bin\Debug\net5.0-windows\TrackerUI.dll.config
+C:\Users\4xgoo\source\repos\TournamentTracker\TrackerUi\bin\Debug\net5.0-windows\Dapper.dll
