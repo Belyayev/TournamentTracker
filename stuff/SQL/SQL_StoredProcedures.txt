@@ -18,3 +18,24 @@ GO
 
 
 -------------------------------------
+
+CREATE PROCEDURE dbo.spPeople_Insert
+	@FirstName nvarchar (100),
+	@LastName nvarchar (100),
+	@EmailAddress nvarchar (100),
+	@CellPhoneNumber nvarchar (20),
+	@id int = 0 output
+
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+    INSERT into dbo.People (FirstName, LastName, EmailAddress, CellPhoneNumber)
+	VALUES (@FirstName, @LastName, @EmailAddress, @CellPhoneNumber);
+
+	select @id = SCOPE_IDENTITY();
+END
+GO
+
+
+-----------------------------------------------

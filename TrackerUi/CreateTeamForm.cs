@@ -16,5 +16,35 @@ namespace TrackerUI
         {
             InitializeComponent();
         }
+
+        private void createMemberButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private bool ValidateForm()
+        {
+            if (firstNameValue.Text.Length == 0)
+            {
+                return false;
+            }            
+            
+            if (lastNameValue.Text.Length == 0)
+            {
+                return false;
+            }            
+            
+            if (emailValue.Text.Length == 0)
+            {
+                return false;
+            }
+
+            if (cellPhoneValue.Text.Length == 0)
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }

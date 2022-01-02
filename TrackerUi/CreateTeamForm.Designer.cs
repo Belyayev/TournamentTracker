@@ -40,13 +40,13 @@ namespace TrackerUI
             this.headerLabel = new System.Windows.Forms.Label();
             this.deleteSelectedTeamButton = new System.Windows.Forms.Button();
             this.addNewMemberBox = new System.Windows.Forms.GroupBox();
-            this.cellPhoneText = new System.Windows.Forms.TextBox();
+            this.cellPhoneValue = new System.Windows.Forms.TextBox();
             this.cellPhoneLabel = new System.Windows.Forms.Label();
-            this.emailText = new System.Windows.Forms.TextBox();
+            this.emailValue = new System.Windows.Forms.TextBox();
             this.emailLabel = new System.Windows.Forms.Label();
-            this.lastnameText = new System.Windows.Forms.TextBox();
+            this.lastNameValue = new System.Windows.Forms.TextBox();
             this.lastNameLabel = new System.Windows.Forms.Label();
-            this.firstNameText = new System.Windows.Forms.TextBox();
+            this.firstNameValue = new System.Windows.Forms.TextBox();
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.createMemberButton = new System.Windows.Forms.Button();
             this.addNewMemberBox.SuspendLayout();
@@ -156,13 +156,13 @@ namespace TrackerUI
             // addNewMemberBox
             // 
             this.addNewMemberBox.Controls.Add(this.createMemberButton);
-            this.addNewMemberBox.Controls.Add(this.cellPhoneText);
+            this.addNewMemberBox.Controls.Add(this.cellPhoneValue);
             this.addNewMemberBox.Controls.Add(this.cellPhoneLabel);
-            this.addNewMemberBox.Controls.Add(this.emailText);
+            this.addNewMemberBox.Controls.Add(this.emailValue);
             this.addNewMemberBox.Controls.Add(this.emailLabel);
-            this.addNewMemberBox.Controls.Add(this.lastnameText);
+            this.addNewMemberBox.Controls.Add(this.lastNameValue);
             this.addNewMemberBox.Controls.Add(this.lastNameLabel);
-            this.addNewMemberBox.Controls.Add(this.firstNameText);
+            this.addNewMemberBox.Controls.Add(this.firstNameValue);
             this.addNewMemberBox.Controls.Add(this.firstNameLabel);
             this.addNewMemberBox.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.addNewMemberBox.Location = new System.Drawing.Point(52, 527);
@@ -172,13 +172,13 @@ namespace TrackerUI
             this.addNewMemberBox.TabStop = false;
             this.addNewMemberBox.Text = "Add New Member";
             // 
-            // cellPhoneText
+            // cellPhoneValue
             // 
-            this.cellPhoneText.Location = new System.Drawing.Point(216, 292);
-            this.cellPhoneText.Margin = new System.Windows.Forms.Padding(5);
-            this.cellPhoneText.Name = "cellPhoneText";
-            this.cellPhoneText.Size = new System.Drawing.Size(384, 50);
-            this.cellPhoneText.TabIndex = 39;
+            this.cellPhoneValue.Location = new System.Drawing.Point(216, 292);
+            this.cellPhoneValue.Margin = new System.Windows.Forms.Padding(5);
+            this.cellPhoneValue.Name = "cellPhoneValue";
+            this.cellPhoneValue.Size = new System.Drawing.Size(384, 50);
+            this.cellPhoneValue.TabIndex = 39;
             // 
             // cellPhoneLabel
             // 
@@ -192,13 +192,13 @@ namespace TrackerUI
             this.cellPhoneLabel.TabIndex = 40;
             this.cellPhoneLabel.Text = "Cellphone";
             // 
-            // emailText
+            // emailValue
             // 
-            this.emailText.Location = new System.Drawing.Point(218, 217);
-            this.emailText.Margin = new System.Windows.Forms.Padding(5);
-            this.emailText.Name = "emailText";
-            this.emailText.Size = new System.Drawing.Size(384, 50);
-            this.emailText.TabIndex = 37;
+            this.emailValue.Location = new System.Drawing.Point(218, 217);
+            this.emailValue.Margin = new System.Windows.Forms.Padding(5);
+            this.emailValue.Name = "emailValue";
+            this.emailValue.Size = new System.Drawing.Size(384, 50);
+            this.emailValue.TabIndex = 37;
             // 
             // emailLabel
             // 
@@ -212,13 +212,13 @@ namespace TrackerUI
             this.emailLabel.TabIndex = 38;
             this.emailLabel.Text = "Email";
             // 
-            // lastnameText
+            // lastNameValue
             // 
-            this.lastnameText.Location = new System.Drawing.Point(216, 140);
-            this.lastnameText.Margin = new System.Windows.Forms.Padding(5);
-            this.lastnameText.Name = "lastnameText";
-            this.lastnameText.Size = new System.Drawing.Size(384, 50);
-            this.lastnameText.TabIndex = 35;
+            this.lastNameValue.Location = new System.Drawing.Point(216, 140);
+            this.lastNameValue.Margin = new System.Windows.Forms.Padding(5);
+            this.lastNameValue.Name = "lastNameValue";
+            this.lastNameValue.Size = new System.Drawing.Size(384, 50);
+            this.lastNameValue.TabIndex = 35;
             // 
             // lastNameLabel
             // 
@@ -232,13 +232,13 @@ namespace TrackerUI
             this.lastNameLabel.TabIndex = 36;
             this.lastNameLabel.Text = "Last Name";
             // 
-            // firstNameText
+            // firstNameValue
             // 
-            this.firstNameText.Location = new System.Drawing.Point(218, 65);
-            this.firstNameText.Margin = new System.Windows.Forms.Padding(5);
-            this.firstNameText.Name = "firstNameText";
-            this.firstNameText.Size = new System.Drawing.Size(384, 50);
-            this.firstNameText.TabIndex = 34;
+            this.firstNameValue.Location = new System.Drawing.Point(218, 65);
+            this.firstNameValue.Margin = new System.Windows.Forms.Padding(5);
+            this.firstNameValue.Name = "firstNameValue";
+            this.firstNameValue.Size = new System.Drawing.Size(384, 50);
+            this.firstNameValue.TabIndex = 34;
             // 
             // firstNameLabel
             // 
@@ -264,6 +264,7 @@ namespace TrackerUI
             this.createMemberButton.TabIndex = 34;
             this.createMemberButton.Text = "Create Member";
             this.createMemberButton.UseVisualStyleBackColor = true;
+            this.createMemberButton.Click += new System.EventHandler(this.createMemberButton_Click);
             // 
             // CreateTeamForm
             // 
@@ -305,13 +306,13 @@ namespace TrackerUI
         private System.Windows.Forms.Label headerLabel;
         private System.Windows.Forms.Button deleteSelectedTeamButton;
         private System.Windows.Forms.GroupBox addNewMemberBox;
-        private System.Windows.Forms.TextBox cellPhoneText;
+        private System.Windows.Forms.TextBox cellPhoneValue;
         private System.Windows.Forms.Label cellPhoneLabel;
-        private System.Windows.Forms.TextBox emailText;
+        private System.Windows.Forms.TextBox emailValue;
         private System.Windows.Forms.Label emailLabel;
-        private System.Windows.Forms.TextBox lastnameText;
+        private System.Windows.Forms.TextBox lastNameValue;
         private System.Windows.Forms.Label lastNameLabel;
-        private System.Windows.Forms.TextBox firstNameText;
+        private System.Windows.Forms.TextBox firstNameValue;
         private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.Button createMemberButton;
     }

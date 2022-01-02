@@ -6,3 +6,10 @@ CREATE TABLE Prizes
   PrizePercentage float NOT NULL,
 );
 
+CREATE TABLE People
+( id int IDENTITY(1,1) PRIMARY KEY,
+  FirstName nvarchar(100) NOT NULL,
+  LastName nvarchar(100) NOt NULL,
+  EmailAddress nvarchar(100) NOT NULL,
+  CellPhoneNumber nvarchar(20) NOt NULL,
+);
