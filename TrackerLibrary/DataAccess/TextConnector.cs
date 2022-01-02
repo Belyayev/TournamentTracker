@@ -1,12 +1,16 @@
 ﻿using TrackerLibrary.Models;
+using TrackerLibrary.DataAccess.TextHelpers;
+using System.Collections.Generic;
 
 namespace TrackerLibrary.DataAccess
 {
     public class TextConnector : IDataConnection
     {
+        private const string PrizesFile = "PrizeModels.csv";
         //TODO - wire up CreatePrize for text files
         public PrizeModel CreatePrize(PrizeModel model)
         {
+            List<PrizeModel> prizes = PrizesFile.FullFilePath().LoadFile().ConvertToPrizeModels();
             //Load the text file
             //Convert the text file to List<PrizeModel>
             //Find the max ID
