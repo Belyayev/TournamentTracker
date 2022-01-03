@@ -13,6 +13,27 @@ namespace TrackerLibrary.DataAccess
         public PersonModel CreatePerson(PersonModel model)
         {
             List<PersonModel> people = PeopleFile.FullFilePath().LoadFile().ConvertToPersonModels();
+            
+            //Find the max ID
+            int currentId = 1;
+            if (people.Count > 0)
+            {
+                currentId = people.OrderByDescending(x => x.Id).First().Id + 1;
+
+            }
+
+            model.Id = currentId;
+
+            //Add the new record with the new ID (max +1)
+            people.Add(model);
+
+            //Convert the prizes to List<string>
+            //Save the List<string> to the text file
+
+            people.SaveToPeopleFile(PeopleFile);
+
+            return model;
+
         }
 
         //TODO - wire up CreatePrize for text files
