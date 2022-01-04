@@ -39,3 +39,10 @@ GO
 
 
 -----------------------------------------------
+
+CREATE PROCEDURE dbo.spPeople_GetAll
+AS
+SELECT * FROM dbo.People
+GO;
+
+------------------------------------------------
