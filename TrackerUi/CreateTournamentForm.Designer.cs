@@ -187,6 +187,7 @@ namespace TrackerUI
             this.removeSelectedPlayerButton.TabIndex = 20;
             this.removeSelectedPlayerButton.Text = "Remove Selected";
             this.removeSelectedPlayerButton.UseVisualStyleBackColor = true;
+            this.removeSelectedPlayerButton.Click += new System.EventHandler(this.removeSelectedPlayerButton_Click);
             // 
             // teamsPlayersLabel
             // 
@@ -244,6 +245,7 @@ namespace TrackerUI
             this.removeSelectedPrizeButton.TabIndex = 23;
             this.removeSelectedPrizeButton.Text = "Remove Selected";
             this.removeSelectedPrizeButton.UseVisualStyleBackColor = true;
+            this.removeSelectedPrizeButton.Click += new System.EventHandler(this.removeSelectedPrizeButton_Click);
             // 
             // CreateTournamentForm
             // 
