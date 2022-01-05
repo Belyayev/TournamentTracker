@@ -13,3 +13,16 @@ CREATE TABLE People
   EmailAddress nvarchar(100) NOT NULL,
   CellPhoneNumber nvarchar(20) NOt NULL,
 );
+
+CREATE TABLE Teams
+( id int IDENTITY(1,1) PRIMARY KEY,
+  TeamName nvarchar(100) NOT NULL,
+);
+
+CREATE TABLE TeamMembers
+( id int IDENTITY(1,1) PRIMARY KEY,
+  TeamId int NOT NULL,
+  PersonId int NOT NULL,
+  FOREIGN KEY (TeamId) REFERENCES Teams(id),
+  FOREIGN KEY (PersonId) REFERENCES People(id)
+);
