@@ -124,5 +124,19 @@ GO
 
 --------------------------------------------------------------- 
 
+CREATE PROCEDURE dbo.spTournaments_Insert
+	@TournamentName nvarchar(200),
+	@EntryFee money
+AS
+BEGIN
+	SET NOCOUNT ON;
+	
+	INSERT INTO dbo.Tournaments (TournamentName, EntryFee, Active)
+	VALUES (@TournamentName, @EntryFee, 1);
+END
+GO
+
+----------------------------------------------------------------
+
 
 

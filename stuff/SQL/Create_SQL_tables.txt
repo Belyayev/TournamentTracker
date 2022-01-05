@@ -26,3 +26,10 @@ CREATE TABLE TeamMembers
   FOREIGN KEY (TeamId) REFERENCES Teams(id),
   FOREIGN KEY (PersonId) REFERENCES People(id)
 );
+
+CREATE TABLE Tournaments
+( id int IDENTITY(1,1) PRIMARY KEY,
+  TournamentName nvarchar(200) NOT NULL,
+  EntryFee money NOT NULL,
+  Active bit NOT NULL,
+);
