@@ -18,11 +18,19 @@ namespace TrackerUI
         public CreateTournamentForm()
         {
             InitializeComponent();
+
+            InitializeLists();
         }
 
         private void CreateTournamentForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void InitializeLists()
+        {
+            selectTeamDropDown.DataSource = availableTeams;
+            selectTeamDropDown.DisplayMember = "TeamName";
         }
     }
 }
