@@ -30,7 +30,7 @@ namespace TrackerUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateTournamentForm));
-            this.tournamentNameText = new System.Windows.Forms.TextBox();
+            this.tournamentNameValue = new System.Windows.Forms.TextBox();
             this.tournamentNameLabel = new System.Windows.Forms.Label();
             this.headerLabel = new System.Windows.Forms.Label();
             this.entryFeeLabel = new System.Windows.Forms.Label();
@@ -49,13 +49,13 @@ namespace TrackerUI
             this.deleteSelectedPrizeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // tournamentNameText
+            // tournamentNameValue
             // 
-            this.tournamentNameText.Location = new System.Drawing.Point(42, 207);
-            this.tournamentNameText.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.tournamentNameText.Name = "tournamentNameText";
-            this.tournamentNameText.Size = new System.Drawing.Size(602, 50);
-            this.tournamentNameText.TabIndex = 11;
+            this.tournamentNameValue.Location = new System.Drawing.Point(42, 207);
+            this.tournamentNameValue.Margin = new System.Windows.Forms.Padding(5);
+            this.tournamentNameValue.Name = "tournamentNameValue";
+            this.tournamentNameValue.Size = new System.Drawing.Size(602, 50);
+            this.tournamentNameValue.TabIndex = 11;
             // 
             // tournamentNameLabel
             // 
@@ -262,12 +262,12 @@ namespace TrackerUI
             this.Controls.Add(this.selectTeamLabel);
             this.Controls.Add(this.entryFeeText);
             this.Controls.Add(this.entryFeeLabel);
-            this.Controls.Add(this.tournamentNameText);
+            this.Controls.Add(this.tournamentNameValue);
             this.Controls.Add(this.tournamentNameLabel);
             this.Controls.Add(this.headerLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "CreateTournamentForm";
             this.Text = "Create Tournament";
             this.Load += new System.EventHandler(this.CreateTournamentForm_Load);
@@ -278,7 +278,7 @@ namespace TrackerUI
 
         #endregion
 
-        private System.Windows.Forms.TextBox tournamentNameText;
+        private System.Windows.Forms.TextBox tournamentNameValue;
         private System.Windows.Forms.Label tournamentNameLabel;
         private System.Windows.Forms.Label headerLabel;
         private System.Windows.Forms.Label entryFeeLabel;
