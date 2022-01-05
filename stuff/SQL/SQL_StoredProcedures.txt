@@ -95,3 +95,34 @@ END
 GO
 
 ----------------------------------------------------------
+
+CREATE PROCEDURE dbo.spTeam_GetAll
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+    SELECT *
+	FROM dbo.Teams;
+
+END
+GO
+
+----------------------------------------------------------------
+
+CREATE PROCEDURE dbo.spTeamMembers_GetByTeam
+	@TeamId int
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+    SELECT p.*
+	FROM dbo.TeamMembers m
+	INNER JOIN dbo.People p ON m.PersonId = p.id
+	WHERE m.TeamId = @TeamId
+END
+GO
+
+--------------------------------------------------------------- 
+
+
+
