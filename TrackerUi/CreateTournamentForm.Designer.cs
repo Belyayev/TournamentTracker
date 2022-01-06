@@ -182,7 +182,7 @@ namespace TrackerUI
             this.removeSelectedPlayerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.removeSelectedPlayerButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.removeSelectedPlayerButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.removeSelectedPlayerButton.Location = new System.Drawing.Point(1259, 245);
+            this.removeSelectedPlayerButton.Location = new System.Drawing.Point(1259, 223);
             this.removeSelectedPlayerButton.Name = "removeSelectedPlayerButton";
             this.removeSelectedPlayerButton.Size = new System.Drawing.Size(170, 117);
             this.removeSelectedPlayerButton.TabIndex = 20;
@@ -240,7 +240,7 @@ namespace TrackerUI
             this.removeSelectedPrizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.removeSelectedPrizeButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.removeSelectedPrizeButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.removeSelectedPrizeButton.Location = new System.Drawing.Point(1259, 579);
+            this.removeSelectedPrizeButton.Location = new System.Drawing.Point(1259, 550);
             this.removeSelectedPrizeButton.Name = "removeSelectedPrizeButton";
             this.removeSelectedPrizeButton.Size = new System.Drawing.Size(170, 117);
             this.removeSelectedPrizeButton.TabIndex = 23;
