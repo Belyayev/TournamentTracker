@@ -126,17 +126,52 @@ GO
 
 CREATE PROCEDURE dbo.spTournaments_Insert
 	@TournamentName nvarchar(200),
-	@EntryFee money
+	@EntryFee money,
+	@id int = 0 output
 AS
 BEGIN
 	SET NOCOUNT ON;
 	
 	INSERT INTO dbo.Tournaments (TournamentName, EntryFee, Active)
 	VALUES (@TournamentName, @EntryFee, 1);
+
+	SELECT @id = SCOPE_IDENTITY();
 END
 GO
 
 ----------------------------------------------------------------
 
+CREATE PROCEDURE dbo.spTournamentPrizes_Insert
+	-- Add the parameters for the stored procedure here
+	@TournamentId int,
+	@PrizeId int,
+	@id int = 0 output
+AS
+BEGIN
+	SET NOCOUNT ON;
 
+    	INSERT INTO dbo.TournamentPrizes (TournamentId, PrizeId)
+	VALUES (@TournamentId, @PrizeId);
 
+	SELECT @id = SCOPE_IDENTITY();
+END
+GO
+
+------------------------------------------------------------- 
+
+CREATE PROCEDURE dbo.spTournamentEntries_Insert
+	@TournamentId int,
+	@TeamId int,
+	@id int = 0 output
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+    	INSERT INTO dbo.TournamentEntries (TournamentId, TeamId)
+	VALUES (@TournamentId, @TeamId);
+
+	SELECT @id = SCOPE_IDENTITY();
+END
+GO
+
+----------------------------------------------

@@ -33,3 +33,19 @@ CREATE TABLE Tournaments
   EntryFee money NOT NULL,
   Active bit NOT NULL,
 );
+
+CREATE TABLE TournamentPrizes
+( id int IDENTITY(1,1) PRIMARY KEY,
+  TournamentId int NOT NULL,
+  PrizeId int NOT NULL,
+  FOREIGN KEY (TournamentId) REFERENCES Tournaments(id),
+  FOREIGN KEY (PrizeId) REFERENCES Prizes(id)
+);
+
+CREATE TABLE TournamentEntries
+( id int IDENTITY(1,1) PRIMARY KEY,
+  TournamentId int NOT NULL,
+  TeamId int NOT NULL,
+  FOREIGN KEY (TournamentId) REFERENCES Tournaments(id),
+  FOREIGN KEY (TeamId) REFERENCES Teams(id)
+);
