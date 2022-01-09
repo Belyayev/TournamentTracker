@@ -182,7 +182,7 @@ namespace TrackerUI
             this.removeSelectedPlayerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.removeSelectedPlayerButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.removeSelectedPlayerButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.removeSelectedPlayerButton.Location = new System.Drawing.Point(1259, 223);
+            this.removeSelectedPlayerButton.Location = new System.Drawing.Point(1259, 222);
             this.removeSelectedPlayerButton.Name = "removeSelectedPlayerButton";
             this.removeSelectedPlayerButton.Size = new System.Drawing.Size(170, 117);
             this.removeSelectedPlayerButton.TabIndex = 20;
