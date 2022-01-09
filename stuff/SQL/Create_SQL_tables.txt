@@ -49,3 +49,22 @@ CREATE TABLE TournamentEntries
   FOREIGN KEY (TournamentId) REFERENCES Tournaments(id),
   FOREIGN KEY (TeamId) REFERENCES Teams(id)
 );
+
+CREATE TABLE Matchups
+( id int IDENTITY(1,1) PRIMARY KEY,
+  TournamentId int NOT NULL,
+  WinnerId int NOT NULL,
+  MatchupRound int NOT NULL,
+  FOREIGN KEY (TournamentId) REFERENCES Tournaments(id),
+  FOREIGN KEY (WinnerId) REFERENCES Teams(id)
+);
+
+CREATE TABLE MatchupEntries
+( id int IDENTITY(1,1) PRIMARY KEY,
+  MatchupId int NOT NULL,
+  ParentMatchupId int NOT NULL,
+  TeamCompetingId int NOT NULL,
+  Score float NULL,
+  FOREIGN KEY (ParentMatchupId) REFERENCES Matchups(id),
+  FOREIGN KEY (TeamCompetingId) REFERENCES Teams(id)
+);
