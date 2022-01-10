@@ -15,15 +15,5 @@
         /// from as the winner.
         /// </summary>
         public MatchupModel ParentMatchup { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="initialScore">
-        /// 
-        /// </param>
-        public MatchupEntryModel(double initialScore)
-        {
-            System.Console.WriteLine();
-        }
     }
 }
