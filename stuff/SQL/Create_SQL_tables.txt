@@ -53,7 +53,7 @@ CREATE TABLE TournamentEntries
 CREATE TABLE Matchups
 ( id int IDENTITY(1,1) PRIMARY KEY,
   TournamentId int NOT NULL,
-  WinnerId int NOT NULL,
+  WinnerId int NULL,
   MatchupRound int NOT NULL,
   FOREIGN KEY (TournamentId) REFERENCES Tournaments(id),
   FOREIGN KEY (WinnerId) REFERENCES Teams(id)
