@@ -105,7 +105,7 @@ namespace TrackerLibrary.DataAccess
                 p.Add("@TournamentId", model.Id);
                 p.Add("@PrizeId", pz.Id);
                 p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
-                connection.Execute("dbo.spTeamMembers_Insert", p, commandType: CommandType.StoredProcedure);
+                connection.Execute("dbo.spTournamentPrizes_Insert", p, commandType: CommandType.StoredProcedure);
             }
         }
 
@@ -130,7 +130,7 @@ namespace TrackerLibrary.DataAccess
                     p.Add("@TournamentId", model.Id);
                     p.Add("@MatchupRound", matchup.MatchupRound);
                     p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
-                    connection.Execute("dbo.spTournamentEntries_Insert", p, commandType: CommandType.StoredProcedure);
+                    connection.Execute("dbo.spMatchups_Insert", p, commandType: CommandType.StoredProcedure);
 
                     matchup.Id = p.Get<int>("@id");
 
