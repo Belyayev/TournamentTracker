@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
@@ -37,6 +38,35 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                 p.PlaceName = cols[2];
                 p.PrizeAmount = decimal.Parse(cols[3]);
                 p.PrizePercentage = double.Parse(cols[4]);
+
+                output.Add(p);
+            }
+
+            return output;
+        }
+
+        private static List<MatchupEntryModel> ConvertStringToMatchupEntryModels(string input)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static TeamModel LookUpTeamById(int id)
+        {
+            throw new NotFiniteNumberException();
+        }
+        public static List<MatchupModel> ConvertToMatchupModels(this List<string> lines)
+        {
+            List<MatchupModel> output = new List<MatchupModel>();
+
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(',');
+
+                MatchupModel p = new MatchupModel();
+                p.Id = int.Parse(cols[0]);
+                p.Entries = ConvertStringToMatchupEntryModels(cols[1]);
+                p.Winner = LookUpTeamById(int.Parse(cols[2]));
+                p.MatchupRound = int.Parse(cols[3]);
 
                 output.Add(p);
             }
