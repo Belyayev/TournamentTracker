@@ -52,6 +52,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
         private static TeamModel LookUpTeamById(int id)
         {
+            List<TeamModel> teams = GlobalConfig.TeamFile.FullFilePath().LoadFile().ConvertToTeamModels(GlobalConfig.PeopleFilepeopleFile);
             throw new NotFiniteNumberException();
         }
         public static List<MatchupModel> ConvertToMatchupModels(this List<string> lines)
