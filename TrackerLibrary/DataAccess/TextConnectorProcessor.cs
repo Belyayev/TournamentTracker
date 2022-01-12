@@ -270,7 +270,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                 entry.SaveEntryToFile(matchupEntryFile);
             }
 
-            //save to file
+            // save to file
         }
 
         public static void SaveEntryToFile(this MatchupEntryModel entry, string matchupEntryFile)
