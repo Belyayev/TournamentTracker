@@ -156,6 +156,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                 }
                 else
                 {
+                    //TODO - cols[2] has a pipe in it, find out why and fix.
                     p.Winner = LookUpTeamById(int.Parse(cols[2]));
                 }
                 p.MatchupRound = int.Parse(cols[3]);
@@ -237,11 +238,14 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                     tm.EnteredTeams.Add(teams.Where(x => x.Id == int.Parse(id)).First());
                 }
 
-                string[] prizeIds = cols[4].Split('|');
-
-                foreach (string id in prizeIds)
+                if (cols[4].Length > 0)
                 {
-                    tm.Prizes.Add(prizes.Where(x => x.Id == int.Parse(id)).First());
+                    string[] prizeIds = cols[4].Split('|');
+
+                    foreach (string id in prizeIds)
+                    {
+                        tm.Prizes.Add(prizes.Where(x => x.Id == int.Parse(id)).First());
+                    } 
                 }
 
                 //capture rounds information
@@ -390,12 +394,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
             foreach (TournamentModel tm in modles)
             {
-                lines.Add($@"{tm.Id},
-                    {tm.TournamentName},
-                    {tm.EntryFee},
-                    {ConvertTeamListToString(tm.EnteredTeams)},
-                    {ConvertPrizeListToString(tm.Prizes)},
-                    {ConvertRoundsListToString(tm.Rounds)}");
+                lines.Add($@"{tm.Id},{tm.TournamentName},{tm.EntryFee},{ConvertTeamListToString(tm.EnteredTeams)},{ConvertPrizeListToString(tm.Prizes)},{ConvertRoundsListToString(tm.Rounds)}");
             }
 
             File.WriteAllLines(fileName.FullFilePath(), lines);
